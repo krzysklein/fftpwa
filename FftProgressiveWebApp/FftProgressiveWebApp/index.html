@@ -32,6 +32,7 @@
                                 <div ng-show="model">
                                     <h3 class="md-headline">{{model.Message}}</h3>
                                     <span class="md-subhead">{{model.Date}}</span>
+                                    <span class="md-subhead" ng-show="model._isFromCache">(from cache)</span>
                                 </div>
                             </div>
                         </md-card-title-media>
