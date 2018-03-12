@@ -7,6 +7,7 @@
     <title>FFT</title>
     <link rel="stylesheet" href="/Content/angular-material.min.css">
     <link rel="stylesheet" href="/Content/app.css">
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body ng-app="App" ng-cloak>
     <div ng-controller="MainController">
@@ -31,6 +32,7 @@
                                 <div ng-show="model">
                                     <h3 class="md-headline">{{model.Message}}</h3>
                                     <span class="md-subhead">{{model.Date}}</span>
+                                    <span class="md-subhead" ng-show="model._isFromCache">(from cache)</span>
                                 </div>
                             </div>
                         </md-card-title-media>
